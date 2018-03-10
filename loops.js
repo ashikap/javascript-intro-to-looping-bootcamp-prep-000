@@ -17,8 +17,19 @@ function whileLoop(n) {
   return "done"
 }
 
+
 function maybeTrue () {
-  array.length > -1 && maybeTrue(); 
+  return Math.random() >= 0.5;
+}
+
+var array = [1, 2, 3];
+
+function doWhileLoop(array) {
+  do {
+    array.pop();
+  } while (array.length > 0); //&& maybeTrue());
   return array;
 }
+
+doWhileLoop(array);
   
